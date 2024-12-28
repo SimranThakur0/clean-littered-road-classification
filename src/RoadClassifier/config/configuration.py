@@ -15,6 +15,7 @@ class ConfigurationManager():
         self, 
         config_filepath = CONFIG_FILE_PATH,
         params_filepath = PARAMS_FILE_PATH):
+
         self.config = read_yaml(config_filepath)
         self.params = read_yaml(params_filepath)
         create_directory([self.config.artifacts_root])
@@ -71,7 +72,7 @@ class ConfigurationManager():
         training = self.config.training
         prepare_base_model = self.config.prepare_base_model
         params = self.params
-        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "PetImages")
+        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "RoadImages")
         create_directory([
             Path(training.root_dir)
         ])
