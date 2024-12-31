@@ -13,3 +13,4 @@ data_ingestion.download_file()
 data_ingestion.unzip_and_clean()
 
 logger.info(f"Data ingestion stage completed")
+
