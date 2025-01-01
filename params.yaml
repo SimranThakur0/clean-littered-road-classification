@@ -1,4 +1,4 @@
-# here i will define the parameters of models
+# defined the parameters of models
 
 
 AUGMENTATION: True

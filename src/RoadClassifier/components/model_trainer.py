@@ -43,7 +43,7 @@ class Training:
                 height_shift_range=0.2,
                 shear_range=0.2,
                 zoom_range=0.2,
-                brightness_range=[0.8, 1.2], # Added brightness augmentation
+                brightness_range=[0.8, 1.2], 
                 fill_mode="nearest",
                 **datagenerator_kwargs
             )
