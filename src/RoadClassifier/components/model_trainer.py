@@ -32,6 +32,7 @@ class Training:
             directory=self.config.training_data,
             subset="validation",
             shuffle=False,
+            class_mode="categorical",
             **dataflow_kwargs
         )
 
@@ -54,8 +55,13 @@ class Training:
             directory=self.config.training_data,
             subset="training",
             shuffle=True,
+            class_mode="categorical",
             **dataflow_kwargs
         )
+
+        print("Class Indices:", self.train_generator.class_indices)
+        print("Sample Labels (Training):", self.train_generator.labels[:10])
+        print("Sample Labels (Validation):", self.valid_generator.labels[:10])
 
     @staticmethod
     def save_model(path: Path, model: tf.keras.Model):
