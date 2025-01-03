@@ -95,7 +95,7 @@
         ├── clean_files   # Images of clean roads
         └── dirty_files   # Images of littered roads
     </pre>
-
+    
   <h2>🌟 Features</h2>
     <ul>
         <li>Automated dataset download and extraction.</li>
