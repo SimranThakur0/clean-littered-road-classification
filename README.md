@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body> 
   <h1>Clean Littered Road Classification</h1>
 
   <p>This project aims to classify images of roads into two categories: <strong>Clean</strong> and <strong>Littered</strong>. The dataset used for this project is obtained from <a href="https://www.kaggle.com/datasets/faizalkarim/cleandirty-road-classification" target="_blank">Kaggle</a>.</p>
